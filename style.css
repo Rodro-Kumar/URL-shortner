@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.all {
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: yellow;
+  font-size: 40px;
+}
+
+input {
+  background-color: cadetblue;
+  color: white;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+}
+input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+
+#copy {
+  background-color: yellowgreen;
+  color: white;
+  padding: 8px 20px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color ease 0.2s;
+  -webkit-transition: background-color ease 0.2s;
+  -moz-transition: background-color ease 0.2s;
+  -ms-transition: background-color ease 0.2s;
+  -o-transition: background-color ease 0.2s;
+}
+
+#copy:hover {
+  background-color: rgb(138, 187, 41);
+}
+
+#generate {
+  border: 0;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color ease 0.2s;
+  -webkit-transition: background-color ease 0.2s;
+  -moz-transition: background-color ease 0.2s;
+  -ms-transition: background-color ease 0.2s;
+  -o-transition: background-color ease 0.2s;
+}
+
+#generate:hover {
+  background-color: rgb(92, 134, 211);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 518px) {
+  h1 {
+    font-size: 30px;
+  }
+  .all {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 30px;
+  }
+  .all {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  h1 {
+    font-size: 30px;
+  }
+  .all {
+    width: 250px;
+  }
+}

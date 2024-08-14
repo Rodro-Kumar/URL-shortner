@@ -4,8 +4,7 @@ const generate = document.querySelector("#generate");
 
 generate.addEventListener("click", async () => {
   let url = input.value;
-  const apiKey = "8943b7fd64cd8b1770ff5affa9a9437b";
-
+  // const apiKey = "8943b7fd64cd8b1770ff5affa9a9437b";
   const response = await fetch(`https://tinyurl.com/api-create.php?url=${url}`);
   const data = await response.text();
 

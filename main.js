@@ -6,7 +6,7 @@ generate.addEventListener("click", () => {
   let url = input.value;
   const apiKey = "8943b7fd64cd8b1770ff5affa9a9437b";
   fetch(
-    `https://www.shareaholic.com/v2/share/shorten_link?apikey=${apiKey}&url=${url}`
+    `https://www.shareaholic.com/v2/share/shorten_link?url=${url}&apikey=${apiKey}`
   )
     .then((response) => {
       return response.json();
